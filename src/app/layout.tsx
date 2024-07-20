@@ -20,7 +20,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={spaceGrotesk.variable}>{children}</body>
+      <body className={`${spaceGrotesk.variable} font-sans`}>{children}</body>
     </html>
   );
 }
