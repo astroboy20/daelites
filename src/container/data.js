@@ -4,6 +4,30 @@ import {
   InstructorIcon,
   InteractiveIcon,
 } from "../assets/index";
+
+export const CoursesData = [
+  {
+    id:1,
+    title:"Excel",
+    src:"/images/excel.png"
+  },
+  {
+    id:2,
+    title:"Power BI",
+    src:"/images/powerbi.png"
+  },
+  {
+    id:3,
+    title:"Tableau",
+    src:"/images/table.png"
+  },
+  {
+    id:4,
+    title:"SQL",
+    src:"/images/sql.png"
+  },
+  
+]
 export const ChooseData = [
   {
     id: 1,
@@ -50,16 +74,20 @@ export const TestimonialData = [
     job: "Content Strategist, Alaska",
     header: "It was an insightful experience!",
     content:
-      "I can't thank this platform enough for helping me prepare for my certification exam. The practice tests were spot-on and gave me the confidence I needed to succeed. The detailed explanations for each question were invaluable. I'm proud to say I passed with flying colors! Moreover, the sense of accomplishment I felt when I received my certification was indescribable. It has opened up new career opportunities that I never thought possible. This platform truly goes above and beyond in providing not just education, but a pathway to achieving dreams.",
+      "I can't thank this platform enough for helping me prepare for my certification exam. The practice tests were spot-on and gave me the confidence I needed to succeed. The detailed explanations for each question were invaluable. I'm proud to say I passed with flying colors!",
+    content2:
+      " Moreover, the sense of accomplishment I felt when I received my certification was indescribable. It has opened up new career opportunities that I never thought possible. This platform truly goes above and beyond in providing not just education, but a pathway to achieving dreams.",
   },
   {
     id: 2,
     name: "Jane Doe",
     image: "/images/b.png",
     job: "Brand Designer, UK",
-    header: "It was an insightful experience!",
+    header: "It was an insightful experience! 2",
     content:
-      "I can't thank this platform enough for helping me prepare for my certification exam. The practice tests were spot-on and gave me the confidence I needed to succeed. The detailed explanations for each question were invaluable. I'm proud to say I passed with flying colors! Moreover, the sense of accomplishment I felt when I received my certification was indescribable. It has opened up new career opportunities that I never thought possible. This platform truly goes above and beyond in providing not just education, but a pathway to achieving dreams.",
+      "I can't thank this platform enough for helping me prepare for my certification exam. The practice tests were spot-on and gave me the confidence I needed to succeed. The detailed explanations for each question were invaluable. I'm proud to say I passed with flying colors!",
+    content2:
+      " Moreover, the sense of accomplishment I felt when I received my certification was indescribable. It has opened up new career opportunities that I never thought possible. This platform truly goes above and beyond in providing not just education, but a pathway to achieving dreams.",
   },
   {
     id: 3,
@@ -68,6 +96,8 @@ export const TestimonialData = [
     job: "Motion Designer, Abuja",
     header: "It was an insightful experience!",
     content:
-      "I can't thank this platform enough for helping me prepare for my certification exam. The practice tests were spot-on and gave me the confidence I needed to succeed. The detailed explanations for each question were invaluable. I'm proud to say I passed with flying colors! Moreover, the sense of accomplishment I felt when I received my certification was indescribable. It has opened up new career opportunities that I never thought possible. This platform truly goes above and beyond in providing not just education, but a pathway to achieving dreams.",
+      "I can't thank this platform enough for helping me prepare for my certification exam. The practice tests were spot-on and gave me the confidence I needed to succeed. The detailed explanations for each question were invaluable. I'm proud to say I passed with flying colors!",
+    content2:
+      " Moreover, the sense of accomplishment I felt when I received my certification was indescribable. It has opened up new career opportunities that I never thought possible. This platform truly goes above and beyond in providing not just education, but a pathway to achieving dreams.",
   },
 ];

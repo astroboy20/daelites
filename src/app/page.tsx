@@ -6,6 +6,7 @@ import { About } from "@/container/about";
 import { Hero } from "@/container/hero";
 import { Choose } from "@/container/choose";
 import { Testimonial } from "@/container/testimonial";
+import { Courses } from "@/container/courses";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -15,6 +16,7 @@ export default function Home() {
       <Header />
       <Hero />
       <About />
+      <Courses/>
       <Choose />
       <Testimonial />
       <Footer />

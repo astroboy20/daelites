@@ -4,7 +4,7 @@ import React from "react";
 
 const Choose = () => {
   return (
-    <section className="fle flex-col justify-center items-center mx-[10%] py-[5%]">
+    <section className="fle flex-col justify-center items-center mx-[10%] py-[10%]">
       <div>
         <h1 className=" mb-5 relative text-[36px] text-[#107C41] font-[700] text-center after:content-[''] after:w-[85px] after:bg-[#8CC63F] after:m-auto after:mt-2 after:rounded-md after:absolute after:h-[5px] after:left-0 after:right-0 after:top-2/3 after:translate-y-2">
           Why choose us
@@ -27,7 +27,7 @@ const Choose = () => {
         ))}
       </div>
       <div className="mt-5 text-center">
-        <Button className="text-[#107C41] border-2 border-[#8CC63F] bg-transparent rounded-[50px] py-[20px] px-[60px] text-[16px] font-[600] w-fit">
+        <Button className="text-[#107C41] border-2 border-[#8CC63F] bg-transparent rounded-[50px] py-[20px] px-[60px] text-[16px] font-[600] w-fit  hover:bg-[#8CC63F]   hover:text-[#fff]">
         Sign up now
         </Button>
       </div>
