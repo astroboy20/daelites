@@ -3,22 +3,21 @@ import React from "react";
 
 const About = () => {
   return (
-    <div className="flex flex-col gap-5 lg:grid grid-cols-2 lg:gap-2 mx-[14%] py-[10%]">
-      {/* This h2 is shown on small screens and hidden on large screens */}
-      <h2 className="block lg:hidden text-center text-[36px] text-[#107C41] font-[700] after:content-[''] after:w-[85px] after:bg-[#8CC63F] after:mt-2 after:rounded-md after:absolute after:h-[5px] after:top-10 after:left-1/2 after:transform after:-translate-x-1/2">
-        About Us
-      </h2>
-
+    <div className="grid py-20 gap-8 lg:grid-cols-2 gap-2 mx-[14%] lg:py-[5%]">
+      <div className="text-center lg:col-span-2">
+        <h2 className="text-[24px] relative lg:text-[36px] lg:hidden text-[#107C41] font-[700] after:content-[''] after:w-[56px] after:bg-[#8CC63F] after:rounded-md after:absolute after:h-[5px] after:left-[40%] after:transform after:-translate-x-1/2 after:top-7 after:mt-2">
+          About Us
+        </h2>
+      </div>
       <Image
         src={"/images/about.png"}
         width={400}
         height={505}
         alt="about_img"
+        className="mx-auto lg:mx-0"
       />
-
       <div className="flex flex-col gap-10">
-        {/* This h2 is hidden on small screens and shown on large screens */}
-        <h2 className="hidden lg:block relative text-[36px] text-[#107C41] font-[700] after:content-[''] after:w-[85px] after:bg-[#8CC63F] after:mt-2 after:rounded-md after:absolute after:h-[5px] after:top-10 after:left-0">
+        <h2 className="hidden lg:block relative text-[30px] text-[#107C41] font-[700] after:content-[''] after:w-[20%] after:bg-[#8CC63F] after:mt-2 after:rounded-md after:absolute after:h-[5px] after:top-10 after:left-0">
           About Us
         </h2>
 

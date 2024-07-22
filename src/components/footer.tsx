@@ -4,10 +4,10 @@ import { Button } from "./ui/button";
 import { Arrow_Right, Facebook, LinkedIn, Twitter } from "../assets/index";
 const Footer = () => {
   return (
-    <div className="flex flex-col  py-[3%] px-[6%] bg-[#282828]">
-      <div className="text-[#fff] flex justify-between ">
+    <div className="flex flex-col py-[10%]  lg:py-[3%] px-[6%] bg-[#282828]">
+     <div className="text-[#fff] flex flex-col gap-8 lg:flex-row justify-between">
         <div>
-          <h3 className="text-[36px] font-[700]">
+          <h3 className="text-[24px] lg:text-[36px] font-[700] mb-5 lg:mb-0">
             About <span className="text-[#008AB2]">Post</span>it.
           </h3>
           <p className="text-[15px] font-[400] leading-[35px]">

@@ -6,9 +6,9 @@ import { motion } from "framer-motion";
 
 const Hero = () => {
   return (
-    <div className="flex flex-col-reverse  pb-[8%]   lg:flex-row justify-between items-center mt-[92px] pt-[6%] lg:pb-[0px] px-[5%] bg-[#F4FFE5]">
+    <div className="flex flex-col-reverse pb-[8%] lg:flex-row justify-between  mt-[92px] pt-[6%] lg:pb-[0px] px-[5%] bg-[#F4FFE5]">
       <motion.div
-        className="text-center flex flex-col gap-5  lg:text-left lg:flex lg:flex-col lg:gap-5 mt-[90px] lg:mt-0"
+        className="text-center flex flex-col gap-5 lg:text-left lg:flex lg:flex-col lg:gap-5 mt-[90px] lg:mt-7"
         initial={{ x: "-100vw" }}
         animate={{ x: 0 }}
         transition={{
@@ -30,7 +30,7 @@ const Hero = () => {
           into your best self."
         </p>
         <div className="text-center lg:text-left">
-          <Button className=" m-auto lg:text-[#fff] bg-[#8CC63F] rounded-[50px] py-[15px] px-[30px] text-[16px] font-[600] w-fit  hover:bg-transparent border-2 border-[#8CC63F] hover:text-[#8CC63F]">
+          <Button className=" m-auto lg:text-[#fff] bg-[#8CC63F] rounded-[50px] py-[15px] px-[30px] text-[12px] lg:text-[16px] font-[600] w-fit  hover:bg-transparent border-2 border-[#8CC63F] hover:text-[#8CC63F]">
             Get Started
           </Button>
         </div>
