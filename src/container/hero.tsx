@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 
 const Hero = () => {
   return (
-    <div className="flex flex-col-reverse pb-[8%] lg:flex-row justify-between  mt-[92px] pt-[6%] lg:pb-[0px] px-[5%] bg-[#F4FFE5]">
+    <section className="flex flex-col-reverse pb-[8%] lg:flex-row justify-between  mt-[92px] pt-[6%] lg:pb-[0px] px-[5%] bg-[#F4FFE5]">
       <motion.div
         className="text-center flex flex-col gap-5 lg:text-left lg:flex lg:flex-col lg:gap-5 mt-[90px] lg:mt-7"
         initial={{ x: "-100vw" }}
@@ -55,7 +55,7 @@ const Hero = () => {
           className="w-300px h-300px lg:w-745px h-745px"
         />
       </motion.div>
-    </div>
+    </section>
   );
 };
 

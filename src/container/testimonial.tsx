@@ -32,7 +32,7 @@ const Testimonial = () => {
                 }`}
                 onClick={() => toggleExpansion(index)}
               >
-                <div className="flex gap-5 justify-center items-center ">
+                <div className="flex gap-5 justify-left items-center">
                   <Image
                     src={data.image}
                     width={50}
@@ -48,7 +48,7 @@ const Testimonial = () => {
                 </div>
               </div>
               {selectedTestimonial === index && (
-                <div className="mt-4 p-4 bg-[#FAFBFF] rounded-[10px] drop-shadow-[0_2px_2px_rgba(30,30,30,0.5)]">
+                <div className="mt-4 p-4 bg-[#FAFBFF] rounded-[10px] drop-shadow-[0_2px_2px_rgba(30,30,30,0.5)] lg:hidden">
                   <h3 className="text-[24px] font-[600]">
                     {TestimonialData[selectedTestimonial].header}
                     <Rating />

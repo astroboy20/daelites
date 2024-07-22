@@ -1,4 +1,4 @@
-import Image from "next/image";
+"use client";
 import { Inter } from "next/font/google";
 import { Header } from "@/components/header";
 import { Footer } from "@/components/footer";
@@ -7,16 +7,17 @@ import { Hero } from "@/container/hero";
 import { Choose } from "@/container/choose";
 import { Testimonial } from "@/container/testimonial";
 import { Courses } from "@/container/courses";
-
-const inter = Inter({ subsets: ["latin"] });
+import { useRef } from "react";
 
 export default function Home() {
+  const aboutRef = useRef<HTMLDivElement>(null);
+  const coursesRef = useRef<HTMLDivElement>(null);
   return (
     <main className="">
-      <Header />
+      <Header aboutRef={aboutRef} coursesRef={coursesRef} />
       <Hero />
-      <About />
-      <Courses/>
+      <About aboutRef={aboutRef} />
+      <Courses coursesRef={coursesRef} />
       <Choose />
       <Testimonial />
       <Footer />

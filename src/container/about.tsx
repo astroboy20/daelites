@@ -1,9 +1,13 @@
 import Image from "next/image";
-import React from "react";
+import React, { RefObject } from "react";
 
-const About = () => {
+type AboutProps = {
+  aboutRef:RefObject<HTMLDivElement>
+}
+
+const About = ({aboutRef}:AboutProps) => {
   return (
-    <div className="grid py-20 gap-8 lg:grid-cols-2 gap-2 mx-[14%] lg:py-[5%]">
+    <section ref={aboutRef} className="grid py-20 gap-8 lg:grid-cols-2 lg:gap-2 mx-[14%] lg:py-[5%]">
       <div className="text-center lg:col-span-2">
         <h2 className="text-[24px] relative lg:text-[36px] lg:hidden text-[#107C41] font-[700] after:content-[''] after:w-[56px] after:bg-[#8CC63F] after:rounded-md after:absolute after:h-[5px] after:left-[40%] after:transform after:-translate-x-1/2 after:top-7 after:mt-2">
           About Us
@@ -36,7 +40,7 @@ const About = () => {
           accountable to ensure your learning goals are achieved.
         </p>
       </div>
-    </div>
+    </section>
   );
 };
 
