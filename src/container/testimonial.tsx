@@ -60,6 +60,9 @@ const Testimonial = () => {
                     <p className="text-[20px] font-[400]">
                       {TestimonialData[selectedTestimonial].content2}
                     </p>
+                    <p className="text-[20px] font-[400]">
+                      {TestimonialData[selectedTestimonial]?.content3}
+                    </p>
                   </div>
                 </div>
               )}
@@ -80,6 +83,9 @@ const Testimonial = () => {
                 </p>
                 <p className="text-[20px] font-[400]">
                   {TestimonialData[selectedTestimonial].content2}
+                </p>
+                <p className="text-[20px] font-[400]">
+                  {TestimonialData[selectedTestimonial]?.content3}
                 </p>
               </div>
             </div>

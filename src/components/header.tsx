@@ -4,24 +4,27 @@ import { Button } from "./ui/button";
 import Link from "next/link";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { MdCancel } from "react-icons/md";
+import { useRouter } from "next/navigation";
 
 type HeaderProps = {
-  aboutRef: RefObject<HTMLDivElement>;
-  coursesRef: RefObject<HTMLDivElement>;
+  aboutRef?: RefObject<HTMLDivElement>;
+  coursesRef?: RefObject<HTMLDivElement>;
 };
 
 const Header = ({ aboutRef, coursesRef }: HeaderProps) => {
-  const [activeSection, setActiveSection] = useState<string | null>("home");
+  const router =useRouter()
+  const [activeSection, setActiveSection] = useState<string | null>("");
   const [menuOpen, setMenuOpen] = useState<boolean>(false);
 
   const handleScroll = (section: string, ref?: RefObject<HTMLDivElement>) => {
     setActiveSection(section);
     if (section === "home") {
       window.scrollTo({ top: 0, behavior: "smooth" });
+      router.push("/")
     } else {
       ref?.current?.scrollIntoView({ behavior: "smooth" });
     }
-    setMenuOpen(false); // Close the menu when a link is clicked
+    setMenuOpen(false); 
   };
 
   return (
@@ -36,14 +39,7 @@ const Header = ({ aboutRef, coursesRef }: HeaderProps) => {
         >
           Home
         </p>
-        <p
-          className={
-            activeSection === "courses" ? "border-b-2 border-[#8CC63F]" : ""
-          }
-          onClick={() => handleScroll("courses", coursesRef)}
-        >
-          Courses
-        </p>
+
         <p
           className={
             activeSection === "about" ? "border-b-2 border-[#8CC63F]" : ""
@@ -52,7 +48,15 @@ const Header = ({ aboutRef, coursesRef }: HeaderProps) => {
         >
           About Us
         </p>
-        <Link href={"https://bit.ly/DAELITES_WAITLIST"} target="_blank">
+        <p
+          className={
+            activeSection === "courses" ? "border-b-2 border-[#8CC63F]" : ""
+          }
+          onClick={() => handleScroll("courses", coursesRef)}
+        >
+          Service Offering
+        </p>
+        {/* <Link href={"https://bit.ly/DAELITES_WAITLIST"} target="_blank">
           <p
             className={
               activeSection === "contact" ? "border-b-2 border-[#8CC63F]" : ""
@@ -61,7 +65,7 @@ const Header = ({ aboutRef, coursesRef }: HeaderProps) => {
           >
             Contact
           </p>
-        </Link>
+        </Link> */}
       </div>
       <div className="flex items-center gap-3">
         <Button className="px-[10px] text-[12px] lg:text-[#fff] bg-[#8CC63F] rounded-[50px] py-[15px] lg:px-[30px] lg:text-[16px] font-[600] hover:bg-transparent border-2 border-[#8CC63F] hover:text-[#8CC63F]">
@@ -93,14 +97,7 @@ const Header = ({ aboutRef, coursesRef }: HeaderProps) => {
             >
               Home
             </p>
-            <p
-              className={
-                activeSection === "courses" ? "border-b-2 border-[#8CC63F]" : ""
-              }
-              onClick={() => handleScroll("courses", coursesRef)}
-            >
-              Courses
-            </p>
+
             <p
               className={
                 activeSection === "about" ? "border-b-2 border-[#8CC63F]" : ""
@@ -109,7 +106,15 @@ const Header = ({ aboutRef, coursesRef }: HeaderProps) => {
             >
               About Us
             </p>
-            <Link href={"https://bit.ly/DAELITES_WAITLIST"} target="_blank">
+            <p
+              className={
+                activeSection === "courses" ? "border-b-2 border-[#8CC63F]" : ""
+              }
+              onClick={() => handleScroll("courses", coursesRef)}
+            >
+              Service Offering
+            </p>
+            {/* <Link href={"https://bit.ly/DAELITES_WAITLIST"} target="_blank">
               <p
                 className={
                   activeSection === "contact"
@@ -120,7 +125,7 @@ const Header = ({ aboutRef, coursesRef }: HeaderProps) => {
               >
                 Contact
               </p>
-            </Link>
+            </Link> */}
           </div>
         </div>
       )}

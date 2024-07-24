@@ -3,10 +3,11 @@ import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import React from "react";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 const Hero = () => {
   return (
-    <section className="flex flex-col-reverse pb-[8%] lg:flex-row justify-between  mt-[92px] pt-[6%] lg:pb-[0px] px-[5%] bg-[#F4FFE5]">
+    <div className="flex flex-col-reverse pb-[8%] lg:flex-row  lg:justify-between mt-[92px] pt-[6%] lg:pb-[0px] px-[5%] bg-[#F4FFE5]">
       <motion.div
         className="text-center flex flex-col gap-5 lg:text-left lg:flex lg:flex-col lg:gap-5 mt-[90px] lg:mt-7"
         initial={{ x: "-100vw" }}
@@ -20,19 +21,31 @@ const Hero = () => {
         }}
       >
         <h1 className="text-[32px] text-[#0B9444] lg:text-[40px] font-[700]">
-          Empower Your Future <br className="hidden lg:block" /> with Data
-          Analytics <br className="hidden lg:block" /> Mastery
+          Welcome to the Largest <br className="hidden lg:block" /> Data
+          Analytics Community <br className="hidden lg:block" /> in Africa
         </h1>
         <p className="text-[18px] font-[400]">
-          Immerse yourself in a world of knowledge. Explore{" "}
-          <br className="hidden lg:block" /> captivating subjects, experience
-          transformative <br className="hidden lg:block" /> learning, and evolve
-          into your best self."
+          We are a community of highly skilled data analyst{" "}
+          <br className="hidden lg:block" /> who have gained expertise and
+          mastery in the <br className="hidden lg:block" /> technical and
+          leadership skills needed to <br className="hidden lg:block" /> thrive
+          in the data analytics industry.
+        </p>
+
+        <p className="text-[18px] font-[400]">
+          We have a wide spread of community members in{" "}
+          <br className="hidden lg:block" /> Nigeria, Kenya, South Africa,
+          Ghana, Senegal, <br className="hidden lg:block" /> Egypt, Liberia,
+          Ivory coast, Angola, <br className="hidden lg:block" />
+          Togo, UK, USA, Malysia, <br className="hidden lg:block" />{" "}
+          Netherlands, Germany <br className="hidden lg:block" /> and Canada.
         </p>
         <div className="text-center lg:text-left">
-          <Button className=" m-auto lg:text-[#fff] bg-[#8CC63F] rounded-[50px] py-[15px] px-[30px] text-[12px] lg:text-[16px] font-[600] w-fit  hover:bg-transparent border-2 border-[#8CC63F] hover:text-[#8CC63F]">
-            Get Started
-          </Button>
+          <Link href={"https://bit.ly/DAELITES_WAITLIST"} target="_blank">
+            <Button className=" m-auto lg:text-[#fff] bg-[#8CC63F] rounded-[50px] py-[15px] px-[30px] text-[12px] lg:text-[16px] font-[600] w-fit  hover:bg-transparent border-2 border-[#8CC63F] hover:text-[#8CC63F]">
+              Get Started
+            </Button>
+          </Link>
         </div>
       </motion.div>
       <motion.div
@@ -52,10 +65,10 @@ const Hero = () => {
           height={745}
           alt="hero-image"
           objectFit="contain"
-          className="w-300px h-300px lg:w-745px h-745px"
+          className="w-[300px] h-[300px] m-auto lg:w-[745px] lg:h-[745px]"
         />
       </motion.div>
-    </section>
+    </div>
   );
 };
 
