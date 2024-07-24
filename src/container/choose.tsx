@@ -30,9 +30,11 @@ const Choose = () => {
         ))}
       </div>
       <div className="mt-5 text-center">
-        <Button className="text-[#107C41] border-2 border-[#8CC63F] bg-transparent rounded-[50px] py-[20px] px-[60px] text-[16px] font-[600] w-fit  hover:bg-[#8CC63F]   hover:text-[#fff]">
-          Sign up now
-        </Button>
+        <Link href={"https://bit.ly/DAELITES_WAITLIST"} target="_blank">
+          <Button className="text-[#107C41] border-2 border-[#8CC63F] bg-transparent rounded-[50px] py-[20px] px-[60px] text-[16px] font-[600] w-fit  hover:bg-[#8CC63F]   hover:text-[#fff]">
+            Sign up now
+          </Button>
+        </Link>
       </div>
     </section>
   );

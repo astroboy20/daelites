@@ -68,9 +68,11 @@ const Header = ({ aboutRef, coursesRef }: HeaderProps) => {
         </Link> */}
       </div>
       <div className="flex items-center gap-3">
+      <Link href={"https://bit.ly/DAELITES_WAITLIST"} target="_blank">
         <Button className="px-[10px] text-[12px] lg:text-[#fff] bg-[#8CC63F] rounded-[50px] py-[15px] lg:px-[30px] lg:text-[16px] font-[600] hover:bg-transparent border-2 border-[#8CC63F] hover:text-[#8CC63F]">
           Enrol Today
         </Button>
+        </Link>
 
         {menuOpen ? (
           <MdCancel
