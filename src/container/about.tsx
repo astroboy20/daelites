@@ -17,11 +17,12 @@ const About = ({ aboutRef }: AboutProps) => {
         </h2>
       </div>
       <Image
-        src={"/images/about.png"}
+        src={"/images/about.jpg"}
         width={400}
-        height={505}
+        height={5005}
         alt="about_img"
-        className="mx-auto lg:mx-0"
+        objectFit="contain"
+        className="mx-auto lg:mx-0 rounded"
       />
       <div className="flex flex-col gap-10">
         <h2 className="hidden lg:block relative text-[30px] text-[#107C41] font-[700] after:content-[''] after:w-[20%] after:bg-[#8CC63F] after:mt-2 after:rounded-md after:absolute after:h-[5px] after:top-10 after:left-0">

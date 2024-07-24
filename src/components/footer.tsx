@@ -11,7 +11,7 @@ const Footer = () => {
       <div className="text-[#fff] flex flex-col gap-8 lg:flex-row justify-between items-start">
         <div>
           <h3 className="text-[24px] lg:text-[36px] font-[700] mb-5 lg:mb-0">
-            About <span className="text-[#008AB2]">Post</span>it.
+            About Daelites
           </h3>
           <p className="text-[14px] font-[400] leading-[35px]">
             We are the largest community empowering Africans with data analytics
