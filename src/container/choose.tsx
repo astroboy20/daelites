@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { ChooseData } from "../container/data";
 import React from "react";
+import Link from "next/link"
 
 const Choose = () => {
   return (
@@ -35,6 +36,7 @@ const Choose = () => {
             Sign up now
           </Button>
         </Link>
+        
       </div>
     </section>
   );
