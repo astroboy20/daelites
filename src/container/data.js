@@ -78,10 +78,10 @@ export const ChooseData = [
 export const TestimonialData = [
   {
     id: 1,
-    name: "Feedback 1",
-    image: "/images/a.png",
+    name: "Feedback from the Excel academy",
+    image: "/images/excel.png",
     job: "Excel course",
-    header: "Excel course feedback-1",
+    header: "Student Testimonial",
     content:
       "I got more than I paid for. Infact, signing up for the class is one of the best decisions I made this year.",
     content2:
@@ -91,10 +91,10 @@ export const TestimonialData = [
   },
   {
     id: 2,
-    name: "Feedback 2",
-    image: "/images/b.png",
+    name: "Feedback from the Excel academy",
+    image: "/images/excel.png",
     job: "Excel course",
-    header: "Excel course feedback-2",
+    header: "Student Testimonial",
     content:
       "I am glad I am part of the community, its was a great thing to have acquired more knowledge from this great family.",
     content2:
@@ -104,10 +104,10 @@ export const TestimonialData = [
   },
   {
     id: 3,
-    name: "Feedback 3",
-    image: "/images/c.png",
+    name: "Feedback from the PowerBI academy",
+    image: "/images/powerbi.png",
     job: "PowerBI course ",
-    header: "PowerBI course feedback",
+    header: "Student Testimonial",
     content: `In all sincerity, I was a novice in PowerBI when I joined the Class in February. I mean, I did not even know that the ""BI"" in PowerBI means Business intelligence. 
       With Just 6 classes of learning and unlearning, I can say I am confident in using PowerBI for Data Transformation, drawing out actionable insights, creating interactive dashboard and publishing report to the PowerBI Service. While I believe there is a long way to go, this training has given me the solid foundation in data analytics. It's just more than a head start! 
      The instructors are top-notch in teaching, and they are always ready to share impactful and priceless resources to further your learning.
@@ -120,18 +120,18 @@ export const TestimonialData = [
   },
   {
     id: 4,
-    name: "Feedback 4",
-    image: "/images/a.png",
+    name: "Feedback from the SQL academy",
+    image: "/images/sql.png",
     job: "SQL course ",
-    header: "SQL course feedback-1",
+    header: "Student Testimonial",
     content: `All the facilitators want everyone to be successful at SQL. They are all passionate about each student success and would go above and beyond to achieve the aim of the course. Chibuzo is extremely patient at explaining each concept in SQL.`,
   },
   {
     id: 5,
-    name: "Feedback 5",
-    image: "/images/b.png",
+    name: "Feedback from the SQL academy",
+    image: "/images/sql.png",
     job: "SQL course ",
-    header: "SQL course feedback-2",
+    header: "Student Testimonial",
     content: `The organization has been wonderful. Team keeps to time (duration). Facilitators are knowledgeable on SQL`,
   },
 ];

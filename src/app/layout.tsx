@@ -10,8 +10,11 @@ const spaceGrotesk = Space_Grotesk({
 });
 
 export const metadata = {
-  title: "Elites Global LTD.",
+  title: "DAELITES",
   description: "Empower Your Future with Data Analytics Mastery",
+  icons:{
+    icon:"/icon.jpg"
+  }
 };
 
 export default function RootLayout({
@@ -22,7 +25,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={spaceGrotesk.className}>
       <Head>
-        <link rel="icon" href="/images/logo.png" />
+        {/* <link rel="icon" href="/images/logo.png" /> */}
         <meta name="description" content={metadata.description} />
         <title>{metadata.title}</title>
       </Head>

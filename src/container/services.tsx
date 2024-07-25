@@ -6,7 +6,7 @@ import { services, courses } from "./data";
 
 const Services = () => {
   return (
-    <div className="bg-gray-100  py-10 px-6 sm:px-10 lg:px-20">
+    <div className="bg-gray-100 mt-[92px] py-10 px-6 sm:px-10 lg:px-20">
       <h1 className="text-3xl lg:text-4xl font-bold text-center mb-8 text-green-700">
         Our Service Offerings
       </h1>

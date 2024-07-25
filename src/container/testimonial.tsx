@@ -1,15 +1,44 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { TestimonialData } from "./data";
 import Image from "next/image";
-import { Rating } from "@/assets";
+import { IoIosStar, IoIosStarOutline } from "react-icons/io";
 
 const Testimonial = () => {
-  const [selectedTestimonial, setSelectedTestimonial] = useState<number | null>(0);
+  const [selectedTestimonial, setSelectedTestimonial] = useState<number | null>(
+    0
+  );
+  const [ratings, setRatings] = useState<number[]>([]);
+
+  // Initialize ratings with random values between 3 and 5
+  useEffect(() => {
+    const initialRatings = TestimonialData.map(
+      () => Math.floor(Math.random() * 3) + 3
+    );
+    setRatings(initialRatings);
+  }, []);
 
   const toggleExpansion = (index: number) => {
     setSelectedTestimonial((prevIndex) => (prevIndex === index ? null : index));
+  };
+
+  const renderStars = (rating: number) => {
+    return (
+      <div className="flex items-center">
+        {Array.from({ length: 5 }).map((_, index) =>
+          index < rating ? (
+            <IoIosStar key={index} className="text-[#8CC63F] " size={"30px"} />
+          ) : (
+            <IoIosStarOutline
+              key={index}
+              className="text-[#8CC63F] "
+              size={"30px"}
+            />
+          )
+        )}
+      </div>
+    );
   };
 
   return (
@@ -27,7 +56,7 @@ const Testimonial = () => {
               <div
                 className={`p-4 cursor-pointer ${
                   selectedTestimonial === index
-                    ? " bg-[#FAFBFF] rounded-[10px] drop-shadow-[0_2px_2px_rgba(30,30,30,0.5)]"
+                    ? "bg-[#FAFBFF] rounded-[10px] drop-shadow-[0_2px_2px_rgba(30,30,30,0.5)]"
                     : ""
                 }`}
                 onClick={() => toggleExpansion(index)}
@@ -41,28 +70,18 @@ const Testimonial = () => {
                   />
                   <div>
                     <h3 className="text-[18px] font-[600]">{data.name}</h3>
-                    <p className="text-[14px] font-[400] text-[#ACACAC]">
-                      {data.job}
-                    </p>
+                    {/* {renderStars(ratings[index])} */}
                   </div>
                 </div>
               </div>
               {selectedTestimonial === index && (
                 <div className="mt-4 p-4 bg-[#FAFBFF] rounded-[10px] drop-shadow-[0_2px_2px_rgba(30,30,30,0.5)] lg:hidden">
-                  <h3 className="text-[24px] font-[600]">
-                    {TestimonialData[selectedTestimonial].header}
-                    <Rating />
-                  </h3>
+                  <h3 className="text-[24px] font-[600]">{data.header}</h3>
+                  {/* {renderStars(ratings[index])} */}
                   <div className="flex flex-col gap-8 mt-2">
-                    <p className="text-[20px] font-[400]">
-                      {TestimonialData[selectedTestimonial].content}
-                    </p>
-                    <p className="text-[20px] font-[400]">
-                      {TestimonialData[selectedTestimonial].content2}
-                    </p>
-                    <p className="text-[20px] font-[400]">
-                      {TestimonialData[selectedTestimonial]?.content3}
-                    </p>
+                    <p className="text-[20px] font-[400]">{data.content}</p>
+                    <p className="text-[20px] font-[400]">{data.content2}</p>
+                    <p className="text-[20px] font-[400]">{data.content3}</p>
                   </div>
                 </div>
               )}
@@ -75,8 +94,8 @@ const Testimonial = () => {
             <div className="flex flex-col gap-5">
               <h3 className="text-[24px] font-[600]">
                 {TestimonialData[selectedTestimonial].header}
-                <Rating />
               </h3>
+              {renderStars(ratings[selectedTestimonial])}
               <div className="flex flex-col gap-8">
                 <p className="text-[20px] font-[400]">
                   {TestimonialData[selectedTestimonial].content}

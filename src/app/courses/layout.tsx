@@ -2,7 +2,7 @@ import Head from "next/head";
 import React from "react";
 
 export const metadata = {
-  title: "Elites Global LTD. | Courses",
+  title: "DAELITE | Courses",
   description: "Courses Description",
 };
 export default function RootLayout({
