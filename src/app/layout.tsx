@@ -25,7 +25,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={spaceGrotesk.className}>
       <Head>
-        {/* <link rel="icon" href="/images/logo.png" /> */}
+        <link rel="icon" href="/logo.png" />
         <meta name="description" content={metadata.description} />
         <title>{metadata.title}</title>
       </Head>
