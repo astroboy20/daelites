@@ -1,5 +1,8 @@
 import Head from "next/head";
 import "./globals.css";
+import 'swiper/css';
+import 'swiper/css/pagination';
+
 import { Space_Grotesk } from "next/font/google";
 
 const spaceGrotesk = Space_Grotesk({

@@ -18,12 +18,12 @@ const Choose = () => {
             key={data.id}
             className="flex flex-col items-center text-center w-full lg:w-[30%] p-8"
           >
-            <div className="flex flex-col gap-5 items-center text-center">
+            <div className="flex flex-col gap-5 items-left text-center">
               {data.icon}
-              <h3 className="text-[#107C41] text-[20px] lg:text-[24px] font-[600]">
+              <h3 className="text-[#107C41] text-left text-[18px] lg:text-[24px] font-[600]">
                 {data.title}
               </h3>
-              <p className="text-[16px] lg:text-[20px] font-[400]">
+              <p className="text-[16px] lg:text-[20px] text-left font-[400]">
                 {data.content}
               </p>
             </div>
@@ -32,7 +32,7 @@ const Choose = () => {
       </div>
       <div className="mt-5 text-center">
         <Link href={"https://bit.ly/DAELITES_WAITLIST"} target="_blank">
-          <Button className="text-[#107C41] border-2 border-[#8CC63F] bg-transparent rounded-[50px] py-[20px] px-[60px] text-[16px] font-[600] w-fit  hover:bg-[#8CC63F]   hover:text-[#fff]">
+          <Button className="text-[#107C41] border-2 border-[#8CC63F] bg-transparent rounded-[5px] py-[20px] px-[60px] text-[16px] font-[600] w-fit  hover:bg-[#8CC63F]   hover:text-[#fff]">
             Sign up now
           </Button>
         </Link>

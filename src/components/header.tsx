@@ -48,32 +48,38 @@ const Header = ({ aboutRef, coursesRef }: HeaderProps) => {
           Home
         </p>
 
-        {pathname === "/courses" ? (
-          ""
-        ) : (
-          <p
+      
+          <Link href={"courses"}
             className={
-              pathname === "/about" ? "border-b-2 border-[#8CC63F]" : ""
+              pathname === "/courses" ? "border-b-2 border-[#8CC63F]" : ""
             }
             onClick={() => handleScroll("about", aboutRef)}
           >
-            About Us
-          </p>
-        )}
+           Courses
+          </Link>
+        
 
-        <p
+        <Link href={"/courses"}
           className={
             pathname === "/courses" ? "border-b-2 border-[#8CC63F]" : ""
           }
-          onClick={() => handleScroll("serviceOffering")}
+         
         >
           Service Offering
-        </p>
+        </Link>
+        <Link href={"/blog"}
+          className={
+            pathname === "/blog" ? "border-b-2 border-[#8CC63F]" : ""
+          }
+         
+        >
+         Blog
+        </Link>
       </div>
       <div className="flex items-center gap-3">
         <Link href={"https://bit.ly/DAELITES_WAITLIST"} target="_blank">
-          <Button className="px-[10px] text-[12px] lg:text-[#fff] bg-[#8CC63F] rounded-[50px] py-[15px] lg:px-[30px] lg:text-[16px] font-[600] hover:bg-transparent border-2 border-[#8CC63F] hover:text-[#8CC63F]">
-            Enrol Today
+          <Button className="px-[10px] text-[12px] lg:text-[#fff] bg-[#8CC63F] rounded-[5px] py-[15px] lg:px-[30px] lg:text-[16px] font-[600] hover:bg-transparent border-2 border-[#8CC63F] hover:text-[#8CC63F]">
+            Contact Us
           </Button>
         </Link>
 
@@ -94,12 +100,12 @@ const Header = ({ aboutRef, coursesRef }: HeaderProps) => {
       {menuOpen && (
         <div className="lg:hidden absolute top-full left-0 w-full bg-white shadow-md">
           <div className="flex flex-col items-center gap-4 py-4">
-            <p
+            <Link href="/"
               className={pathname === "/" ? "border-b-2 border-[#8CC63F]" : ""}
-              onClick={() => handleScroll("home")}
+             
             >
               Home
-            </p>
+            </Link>
             {pathname === "/courses" ? (
               ""
             ) : (
