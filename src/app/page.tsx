@@ -10,14 +10,14 @@ import { Courses } from "@/container/courses";
 import { useRef } from "react";
 
 export default function Home() {
-  const aboutRef = useRef<HTMLDivElement>(null);
-  const coursesRef = useRef<HTMLDivElement>(null);
+  // const aboutRef = useRef<HTMLDivElement>(null);
+  // const coursesRef = useRef<HTMLDivElement>(null);
   return (
     <main className="">
-      <Header aboutRef={aboutRef} coursesRef={coursesRef} />
+      <Header />
       <Hero />
-      <About aboutRef={aboutRef} />
-      <Courses coursesRef={coursesRef} />
+      <About />
+      <Courses />
       <Choose />
       <Testimonial />
       <Footer />

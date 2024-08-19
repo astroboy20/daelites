@@ -8,12 +8,7 @@ import { MdCancel } from "react-icons/md";
 import { useRouter } from "next/navigation";
 import { usePathname } from "next/navigation";
 
-type HeaderProps = {
-  aboutRef?: RefObject<HTMLDivElement>;
-  coursesRef?: RefObject<HTMLDivElement>;
-};
-
-const Header = ({ aboutRef, coursesRef }: HeaderProps) => {
+const Header = () => {
   const router = useRouter();
   const pathname = usePathname();
   const [menuOpen, setMenuOpen] = useState<boolean>(false);
@@ -41,39 +36,32 @@ const Header = ({ aboutRef, coursesRef }: HeaderProps) => {
         <Image src={"/images/logo.png"} width={170} height={55} alt="logo" />
       </Link>
       <div className="hidden lg:flex justify-between gap-[40px] cursor-pointer text-[16px] font-[500] text-[#2F2F2F]">
-        <p
-          className={pathname === "/" ? "border-b-2 border-[#8CC63F]" : ""}
-          onClick={() => handleScroll("home")}
-        >
+        <p className={pathname === "/" ? "border-b-2 border-[#8CC63F]" : ""}>
           Home
         </p>
 
-      
-          <Link href={"courses"}
-            className={
-              pathname === "/courses" ? "border-b-2 border-[#8CC63F]" : ""
-            }
-            onClick={() => handleScroll("about", aboutRef)}
-          >
-           Courses
-          </Link>
-        
-
-        <Link href={"/courses"}
+        <Link
+          href={"courses"}
           className={
             pathname === "/courses" ? "border-b-2 border-[#8CC63F]" : ""
           }
-         
+        >
+          Courses
+        </Link>
+
+        <Link
+          href={"/courses"}
+          className={
+            pathname === "/courses" ? "border-b-2 border-[#8CC63F]" : ""
+          }
         >
           Service Offering
         </Link>
-        <Link href={"/blog"}
-          className={
-            pathname === "/blog" ? "border-b-2 border-[#8CC63F]" : ""
-          }
-         
+        <Link
+          href={"/blog"}
+          className={pathname === "/blog" ? "border-b-2 border-[#8CC63F]" : ""}
         >
-         Blog
+          Blog
         </Link>
       </div>
       <div className="flex items-center gap-3">
@@ -100,9 +88,9 @@ const Header = ({ aboutRef, coursesRef }: HeaderProps) => {
       {menuOpen && (
         <div className="lg:hidden absolute top-full left-0 w-full bg-white shadow-md">
           <div className="flex flex-col items-center gap-4 py-4">
-            <Link href="/"
+            <Link
+              href="/"
               className={pathname === "/" ? "border-b-2 border-[#8CC63F]" : ""}
-             
             >
               Home
             </Link>
@@ -113,7 +101,6 @@ const Header = ({ aboutRef, coursesRef }: HeaderProps) => {
                 className={
                   pathname === "/about" ? "border-b-2 border-[#8CC63F]" : ""
                 }
-                onClick={() => handleScroll("about", aboutRef)}
               >
                 About Us
               </p>

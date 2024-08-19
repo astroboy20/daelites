@@ -78,64 +78,37 @@ export const ChooseData = [
 export const TestimonialData = [
   {
     id: 1,
-    name: "Feedback from the Excel academy",
-    image: "/images/excel.png",
-    job: "Excel course",
+    job: "Excel Academy",
     header: "Student Testimonial",
     content:
-      "I got more than I paid for. Infact, signing up for the class is one of the best decisions I made this year.",
-    content2:
-      "I must give special commendation to the entire team of management. Most especially, Mr SALAMI AYODEJI OLUWADAMILARE. I love his style of teaching. He did more than justice to the course outline. I think the not so young man should consider a career in. Lecturing. ",
-    content3:
-      "If you are looking to start a career in Data analytics, DAELITES is the greatest Pilot I can recommend for a successful flight landing into your dream career. ",
+      "I got more than I paid for. Infact, signing up for the class is one of the best decisions I made this year. I must give special commendation to the entire team of management. Most especially, Mr SALAMI AYODEJI OLUWADAMILARE. I love his style of teaching. He did more than justice to the course outline. I think the not so young man should consider a career in. Lecturing. If you are looking to start a career in Data analytics, DAELITES is the greatest Pilot I can recommend for a successful flight landing into your dream career.",
   },
   {
     id: 2,
-    name: "Feedback from the Excel academy",
-    image: "/images/excel.png",
-    job: "Excel course",
+    job: "Excel Academy",
     header: "Student Testimonial",
     content:
-      "I am glad I am part of the community, its was a great thing to have acquired more knowledge from this great family.",
-    content2:
-      " The experience was beneficial, superb and awesome. The facilitator always nailed it. The thorough explanations in the class really helped me understand the concept better. ",
-    content3:
-      "Overall, your approach to teaching is very effective and I'm looking forward to learning more from the team. ",
+      "I am glad I am part of the community, its was a great thing to have acquired more knowledge from this great family. The experience was beneficial, superb and awesome. The facilitator always nailed it. The thorough explanations in the class really helped me understand the concept better. Overall, your approach to teaching is very effective and I'm looking forward to learning more from the team.",
   },
   {
     id: 3,
-    name: "Feedback from the PowerBI academy",
-    image: "/images/powerbi.png",
-    job: "PowerBI course ",
+    job: "PowerBI Academy ",
     header: "Student Testimonial",
-    content: `In all sincerity, I was a novice in PowerBI when I joined the Class in February. I mean, I did not even know that the ""BI"" in PowerBI means Business intelligence. 
-      With Just 6 classes of learning and unlearning, I can say I am confident in using PowerBI for Data Transformation, drawing out actionable insights, creating interactive dashboard and publishing report to the PowerBI Service. While I believe there is a long way to go, this training has given me the solid foundation in data analytics. It's just more than a head start! 
-     The instructors are top-notch in teaching, and they are always ready to share impactful and priceless resources to further your learning.
-     I got a lot of motivation and inspiration from the project coordinator that helps with my consistency.
-    
-     `,
-    content2: ` DAELITES is not just an academy, it's more like a family where you learn from experts in the field, get tutelage on how to optimize your social media, building your CV and position yourself fully ready for the job market.
-      DAElites training also provide necessary resources and tools to me to prepare for my Microsoft Proficiency Exam. 
-      No matter your level of proficiency, Joining DAElites Academy is a great choice I think every prospective Data Analyst enthusiast should make.`,
+    content: `In all sincerity, I was a novice in PowerBI when I joined the Class in February. I mean, I did not even know that the ""BI"" in PowerBI means Business intelligence. With Just 6 classes of learning and unlearning, I can say I am confident in using PowerBI for Data Transformation, drawing out actionable insights, creating interactive dashboard and publishing report to the PowerBI Service.`,
   },
   {
     id: 4,
-    name: "Feedback from the SQL academy",
-    image: "/images/sql.png",
-    job: "SQL course ",
+    job: "SQL Academy ",
     header: "Student Testimonial",
     content: `All the facilitators want everyone to be successful at SQL. They are all passionate about each student success and would go above and beyond to achieve the aim of the course. Chibuzo is extremely patient at explaining each concept in SQL.`,
   },
   {
     id: 5,
-    name: "Feedback from the SQL academy",
-    image: "/images/sql.png",
-    job: "SQL course ",
+    job: "SQL Academy ",
     header: "Student Testimonial",
     content: `The organization has been wonderful. Team keeps to time (duration). Facilitators are knowledgeable on SQL`,
   },
 ];
-
 
 export const services = [
   {
@@ -217,4 +190,3 @@ export const courses = [
     paymentLink: "https://paystack.com/pay/dae_private_coaching",
   },
 ];
-

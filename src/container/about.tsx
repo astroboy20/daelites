@@ -1,14 +1,10 @@
 "use client";
 import Image from "next/image";
-import React, { RefObject } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import { Autoplay, Navigation, Pagination } from "swiper/modules";
 
-type AboutProps = {
-  aboutRef: RefObject<HTMLDivElement>;
-};
 
 const sliderImages = [
   {
@@ -41,10 +37,9 @@ const sliderImages = [
   },
 ];
 
-const About = ({ aboutRef }: AboutProps) => {
+const About = () => {
   return (
     <section
-      ref={aboutRef}
       className="grid py-20 gap-8 lg:grid-cols-2 lg:gap-20  mx-[14%] lg:py-[5%]"
     >
       <div className="text-center lg:col-span-2">
