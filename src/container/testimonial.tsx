@@ -21,6 +21,7 @@ const Testimonial = () => {
           height={600}
           alt="frame"
           objectFit="contain"
+          className="w-auto h-auto sm:w-auto sm:h-auto lg:w-[900px] lg:h-fit"
         />
       </div>
       <div className="pt-[20%] mx-[15%] sm:mx-[10%] lg:mx-[14%] lg:pt-[10%] pb-[10%] flex flex-col gap-10 text-white ">
