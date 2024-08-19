@@ -40,11 +40,11 @@ const sliderImages = [
 const About = () => {
   return (
     <section
-      className="grid py-20 gap-8 lg:grid-cols-2 lg:gap-20  mx-[14%] lg:py-[5%]"
+      className="grid pt-20 gap-8 lg:grid-cols-2 lg:gap-20 px-[6%] items-start lg:mx-[8%] lg:pt-[5%]"
     >
       <div className="text-center lg:col-span-2">
         <h1 className="hidden lg:block text-[#107C41] relative text-[24px] lg:text-[36px] font-[700] text-center after:content-[''] after:w-[56px] lg:after:w-[85px] after:bg-[#8CC63F] after:m-auto after:mt-2 after:rounded-md after:absolute after:h-[5px] after:left-0 after:right-0 after:top-2/3 after:translate-y-2">
-          About
+          About Us
         </h1>
       </div>
       <div className="w-full h-fit overflow-hidden">
@@ -65,16 +65,17 @@ const About = () => {
                 alt="about_img"
                 objectFit="cover"
                 priority={data.id === 1} // Correct index for priority
+                className="w-full h-full"
               />
             </SwiperSlide>
           ))}
         </Swiper>
       </div>
 
-      <div className="flex flex-col gap-10">
-        <h2 className="flex lg:hidden relative text-[30px] text-[#107C41] font-[700] after:content-[''] after:w-[20%] after:bg-[#8CC63F] after:mt-2 after:rounded-md after:absolute after:h-[5px] after:top-10 after:left-0">
+      <div className="flex flex-col gap-5 lg:gap-10">
+      <h1 className="lg:hidden mb-5 relative text-[24px] lg:text-[36px] text-[#107C41] font-[700] text-center after:content-[''] after:w-[56px] lg:after:w-[85px] after:bg-[#8CC63F] after:m-auto after:mt-2 after:rounded-md after:absolute after:h-[5px] after:left-0 after:right-0 after:top-2/3 after:translate-y-2">
           About Us
-        </h2>
+        </h1>
 
         <p className="text-[16px] text-center lg:text-[20px] lg:text-left">
           We are a community of highly skilled data analysts who have gained

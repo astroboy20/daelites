@@ -8,11 +8,34 @@ import { AIcon, BIcon, CIcon } from "@/assets";
 
 const Hero = () => {
   return (
-    <div className=" relative flex flex-col-reverse pb-[8%] lg:flex-row lg:justify-center xl:justify-start mt-[92px]  lg:pb-[0px] h-[700px]  bg-[url('/images/Hero-section.png')]">
+    <div className="lg:relative flex flex-col-reverse pb-[8%] lg:flex-row lg:justify-center xl:justify-start lg:mt-[92px]  lg:pb-[0px] h-[700px]  bg-[url('/images/Hero-section.png')]">
+
+      <motion.div
+        initial={{ scale: 0 }}
+        animate={{ scale: 1 }}
+        transition={{
+          type: "spring",
+          stiffness: 50,
+          damping: 20,
+          duration: 1.0,
+          delay: 0.2,
+        }}
+        className="absolute top-0 sm:w-auto sm:left-[50%] lg:left-[50%] z-0 w-full lg:w-auto"
+      >
+        <Image
+          src={"/images/Frame.png"}
+          width={488}
+          height={488}
+          alt="hero-image"
+          objectFit="contain"
+          className="w-[400px] h-[400px] m-auto lg:w-[758px] lg:h-[481px]"
+        />
+      </motion.div>
+
       <motion.div
         className="text-center flex flex-col  gap-5 lg:text-left lg:flex lg:flex-col lg:gap-5 mt-[900px] pt-[6%] pl-[6%] lg:mt-7 lg:max-w-[50%]"
         initial={{ x: "-100vw" }}
-        animate={{ x: 0 }}
+        animate={{  x: 0 }}
         transition={{
           type: "spring",
           stiffness: 50,
@@ -41,27 +64,6 @@ const Hero = () => {
         </div>
       </motion.div>
 
-      <motion.div
-        initial={{ scale: 0 }}
-        animate={{ scale: 1 }}
-        transition={{
-          type: "spring",
-          stiffness: 50,
-          damping: 20,
-          duration: 1.0,
-          delay: 0.2,
-        }}
-        className="absolute top-0 left-[50%] z-0"
-      >
-        <Image
-          src={"/images/Frame.png"}
-          width={488}
-          height={488}
-          alt="hero-image"
-          objectFit="contain"
-          className="w-[400px] h-[400px] m-auto lg:w-[758px] lg:h-[481px]"
-        />
-      </motion.div>
       <div className="absolute top-0 lg:left-[50%] lg:top-20">
         <motion.span
           initial={{ opacity: 0, x: 50, y: -50 }}
@@ -87,9 +89,10 @@ const Hero = () => {
         >
           <CIcon />
         </motion.span>
+
         <motion.div
-          initial={{ y: "100dvh" }}
-          animate={{ y: 0 }}
+          initial={{ opacity: 0, y: "100dvh" }}
+          animate={{ opacity: 1, y: 0 }}
           transition={{
             type: "spring",
             stiffness: 50,
@@ -103,7 +106,7 @@ const Hero = () => {
             width={488}
             height={488}
             alt="hero-image"
-            objectFit="contain"
+            objectFit="cover"
             className="w-[300px] h-[300px] m-auto lg:w-[488px] lg:h-[488px]  "
           />
         </motion.div>
