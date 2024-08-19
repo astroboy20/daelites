@@ -8,8 +8,7 @@ import { AIcon, BIcon, CIcon } from "@/assets";
 
 const Hero = () => {
   return (
-    <div className="lg:relative flex flex-col-reverse pb-[8%] lg:flex-row lg:justify-center xl:justify-start lg:mt-[92px]  lg:pb-[0px] h-[700px]  bg-[url('/images/Hero-section.png')]">
-
+    <div className="mt-[92px] flex flex-col-reverse pb-[8%] lg:flex-row lg:justify-center xl:justify-start lg:mt-[92px]  lg:pb-[0px] h-fit lg:h-[700px]  bg-[url('/images/Hero-section.png')]">
       <motion.div
         initial={{ scale: 0 }}
         animate={{ scale: 1 }}
@@ -20,7 +19,7 @@ const Hero = () => {
           duration: 1.0,
           delay: 0.2,
         }}
-        className="absolute top-0 sm:w-auto sm:left-[50%] lg:left-[50%] z-0 w-full lg:w-auto"
+        className="absolute top-0 sm:w-full sm:right-0 lg:left-[50%] z-0 w-full lg:w-auto"
       >
         <Image
           src={"/images/Frame.png"}
@@ -28,14 +27,14 @@ const Hero = () => {
           height={488}
           alt="hero-image"
           objectFit="contain"
-          className="w-[400px] h-[400px] m-auto lg:w-[758px] lg:h-[481px]"
+          className="w-[400px] h-[400px] ml-auto lg:w-[758px] lg:h-[481px]"
         />
       </motion.div>
 
       <motion.div
-        className="text-center flex flex-col  gap-5 lg:text-left lg:flex lg:flex-col lg:gap-5 mt-[900px] pt-[6%] pl-[6%] lg:mt-7 lg:max-w-[50%]"
+        className="text-center flex flex-col px-[6%] gap-5 lg:text-left lg:flex lg:flex-col lg:gap-5 mt-[350px] sm:mt-[600px] lg:pt-[6%] lg:pl-[6%] lg:mt-7 lg:max-w-[50%]"
         initial={{ x: "-100vw" }}
-        animate={{  x: 0 }}
+        animate={{ x: 0 }}
         transition={{
           type: "spring",
           stiffness: 50,
@@ -64,12 +63,12 @@ const Hero = () => {
         </div>
       </motion.div>
 
-      <div className="absolute top-0 lg:left-[50%] lg:top-20">
+      <div className="absolute top-[120px] w-full lg:w-fit m-auto left-auto lg:left-[50%] lg:top-[150px]">
         <motion.span
           initial={{ opacity: 0, x: 50, y: -50 }}
           animate={{ opacity: 1, x: 0, y: 0 }}
           transition={{ duration: 0.4, delay: 0.4 }}
-          className="absolute top-[40%] left-[-8%] z-20"
+          className="absolute top-[20%] left-[10%] sm:top-[40%] sm:left-[13%] lg:top-[30%] lg:left-[-8%] z-20"
         >
           <AIcon />
         </motion.span>
@@ -77,7 +76,7 @@ const Hero = () => {
           initial={{ opacity: 0, x: -50, y: -50 }}
           animate={{ opacity: 1, x: 0, y: 0 }}
           transition={{ duration: 0.6, delay: 0.6 }}
-          className="absolute top-[80%] left-[80%] z-20"
+          className="absolute top-[70%] left-[65%] sm:top-[70%] sm:left-[73%] lg:top-[80%] lg:left-[80%] z-20"
         >
           <BIcon />
         </motion.span>
@@ -85,7 +84,7 @@ const Hero = () => {
           initial={{ opacity: 0, x: -50, y: -50 }}
           animate={{ opacity: 1, x: 0, y: 0 }}
           transition={{ duration: 0.8, delay: 0.8 }}
-          className="absolute top-5 left-[70%] z-20"
+          className="absolute top-2 left-[65%] sm:top-2 sm:left-[63%] lg:top-5 lg:left-[70%] z-20"
         >
           <CIcon />
         </motion.span>
@@ -106,8 +105,8 @@ const Hero = () => {
             width={488}
             height={488}
             alt="hero-image"
-            objectFit="cover"
-            className="w-[300px] h-[300px] m-auto lg:w-[488px] lg:h-[488px]  "
+            objectFit="contain"
+            className="w-auto h-auto sm:w-[488px] sm:h-[488px]  lg:w-[488px] lg:h-[488px] m-auto "
           />
         </motion.div>
       </div>

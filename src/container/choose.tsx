@@ -12,7 +12,7 @@ const Choose = () => {
         </h1>
       </div>
 
-      <div className="flex flex-col gap-10 sm:flex-col lg:flex-row lg:gap-5 lg:flex-wrap lg:justify-center w-full" >
+      <div className="grid grid-cols-2 lg:flex gap-10 sm:gap-20 sm:flex-col lg:flex-row lg:gap-5 lg:flex-wrap lg:justify-center w-full">
         {ChooseData.map((data) => (
           <div
             key={data.id}

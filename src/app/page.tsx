@@ -8,6 +8,7 @@ import { Choose } from "@/container/choose";
 import { Testimonial } from "@/container/testimonial";
 import { Courses } from "@/container/courses";
 import { useRef } from "react";
+import { Help } from "@/container/help";
 
 export default function Home() {
   // const aboutRef = useRef<HTMLDivElement>(null);
@@ -20,6 +21,8 @@ export default function Home() {
       <Courses />
       <Choose />
       <Testimonial />
+
+      <Help/>
       <Footer />
     </main>
   );

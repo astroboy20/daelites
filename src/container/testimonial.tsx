@@ -24,7 +24,7 @@ const Testimonial = () => {
           className="w-auto h-auto sm:w-auto sm:h-auto lg:w-[900px] lg:h-fit"
         />
       </div>
-      <div className="pt-[20%] mx-[15%] sm:mx-[10%] lg:mx-[14%] lg:pt-[10%] pb-[10%] flex flex-col gap-10 text-white ">
+      <div className="pt-[15%] mx-[15%] sm:mx-[10%] lg:mx-[14%] lg:pt-[10%] pb-[10%] flex flex-col gap-10 text-white ">
         <div>
           <h1 className="mb-5 relative text-[24px] lg:text-[36px] text-[#107C41] font-[700] text-center after:content-[''] after:w-[85px] after:bg-[#8CC63F] after:m-auto after:mt-2 after:rounded-md after:absolute after:h-[5px] after:left-0 after:right-0 after:top-2/3 after:translate-y-2">
             Testimonials
