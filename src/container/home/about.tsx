@@ -16,6 +16,7 @@ const About = () => {
       </div>
       <div className="w-full h-fit overflow-hidden">
         <Swiper
+        autoHeight={true}
           spaceBetween={5}
           slidesPerView={1}
           modules={[Autoplay]}
