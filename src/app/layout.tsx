@@ -1,9 +1,10 @@
 import Head from "next/head";
 import "./globals.css";
-import 'swiper/css';
-import 'swiper/css/pagination';
+import "swiper/css";
+import "swiper/css/pagination";
 
 import { Space_Grotesk } from "next/font/google";
+import LenisScroll from "@/components/lenis-scroll";
 
 const spaceGrotesk = Space_Grotesk({
   subsets: ["latin"],
@@ -15,9 +16,9 @@ const spaceGrotesk = Space_Grotesk({
 export const metadata = {
   title: "DAELITES",
   description: "Empower Your Future with Data Analytics Mastery",
-  icons:{
-    icon:"/icon.jpg"
-  }
+  icons: {
+    icon: "/icon.jpg",
+  },
 };
 
 export default function RootLayout({
@@ -32,7 +33,10 @@ export default function RootLayout({
         <meta name="description" content={metadata.description} />
         <title>{metadata.title}</title>
       </Head>
-      <body>{children}</body>
+      <body>
+        <LenisScroll />
+        {children}
+      </body>
     </html>
   );
 }

@@ -2,13 +2,13 @@
 import { Inter } from "next/font/google";
 import { Header } from "@/components/header";
 import { Footer } from "@/components/footer";
-import { About } from "@/container/about";
-import { Hero } from "@/container/hero";
-import { Choose } from "@/container/choose";
-import { Testimonial } from "@/container/testimonial";
-import { Courses } from "@/container/courses";
-import { useRef } from "react";
-import { Help } from "@/container/help";
+import { About } from "@/container/home/about";
+import { Team } from "@/container/home/team";
+import { Choose } from "@/container/home/choose";
+import { Courses } from "@/container/home/courses";
+import { Help } from "@/container/home/help";
+import { Hero } from "@/container/home/hero";
+import { Testimonial } from "@/container/home/testimonial";
 
 export default function Home() {
   // const aboutRef = useRef<HTMLDivElement>(null);
@@ -21,8 +21,8 @@ export default function Home() {
       <Courses />
       <Choose />
       <Testimonial />
-
-      <Help/>
+      <Team />
+      <Help />
       <Footer />
     </main>
   );

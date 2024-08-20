@@ -37,6 +37,38 @@ export const CoursesData = [
     url: "/courses",
   },
 ];
+
+export const sliderImages = [
+  {
+    id: 1,
+    src: "/images/slider/a.png",
+  },
+  {
+    id: 2,
+    src: "/images/slider/b.png",
+  },
+  {
+    id: 3,
+    src: "/images/slider/c.png",
+  },
+  {
+    id: 4,
+    src: "/images/slider/d.png",
+  },
+  {
+    id: 5,
+    src: "/images/slider/e.png",
+  },
+  {
+    id: 6,
+    src: "/images/slider/f.png",
+  },
+  {
+    id: 7,
+    src: "/images/slider/g.png",
+  },
+];
+
 export const ChooseData = [
   {
     id: 1,
@@ -188,5 +220,73 @@ export const courses = [
     duration: "5 Months",
     fee: "₦100,000 per month",
     paymentLink: "https://paystack.com/pay/dae_private_coaching",
+  },
+];
+
+export const teamData = [
+  {
+    id: 1,
+    src: "/images/team/a.png",
+    name: "Iremide Olatunji",
+    position: "Founder/CEO",
+    url: "/",
+  },
+  {
+    id: 2,
+    src: "/images/team/b.png",
+    name: " Francisca Ezeabikwa",
+    position: "Project Coordinator,Training",
+    url: "/",
+  },
+  {
+    id: 3,
+    src: "/images/team/c.png",
+    name: "   Ejiroghene Pepper",
+    position: "Project Coordinator,Soft Skills",
+    url: "/",
+  },
+
+  {
+    id: 4,
+    src: "/images/team/d.png",
+    name: "Oluwatomisin Olatoye",
+    position: "Project Coordinator,Build Data Project",
+    url: "/",
+  },
+  {
+    id: 5,
+    src: "/images/team/e.png",
+    name: "Akosua Afaribea",
+    position: "Project Coordinator,1 million SME",
+    url: "/",
+  },
+
+  {
+    id: 6,
+    src: "/images/team/f.png",
+    name: "Oluwanifemi Aweda",
+    position: "Facilitator",
+    url: "/",
+  },
+  {
+    id: 7,
+    src: "/images/team/test.png",
+    name: "Salami Ayodeji",
+    position: "Facilitator",
+    url: "/",
+  },
+  {
+    id: 7,
+    src: "/images/team/h.png",
+    name: " Chibuzo Nwankwo",
+    position: "Facilitator",
+    url: "/",
+  },
+  {
+    id: 8,
+    src: "/images/team/i.png",
+    name: "  Ayomide Oladimeji",
+    position: "Head,PR & Communications",
+    url: "/",
   },
 ];

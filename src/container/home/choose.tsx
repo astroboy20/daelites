@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
-import { ChooseData } from "../container/data";
 import React from "react";
 import Link from "next/link";
+import { ChooseData } from "../../utils/data";
 
 const Choose = () => {
   return (

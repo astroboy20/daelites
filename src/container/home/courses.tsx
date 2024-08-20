@@ -1,10 +1,10 @@
 "use client";
 import React, { RefObject } from "react";
-import { CoursesData } from "./data";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
+import { CoursesData } from "../../utils/data";
 
 const Courses = () => {
   return (

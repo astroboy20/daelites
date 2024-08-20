@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import React from "react";
 import { FaEnvelope } from "react-icons/fa";
-import { services, courses } from "./data";
+import { services, courses } from "../utils/data";
 
 const Services = () => {
   return (
