@@ -144,82 +144,142 @@ export const TestimonialData = [
 
 export const services = [
   {
+    id: 1,
     title: "DATA ANALYTICS TRAINING PROGRAM",
     description:
       "DAELITES has 5 training course modules, which spans for a year.",
+    src: "/images/services/a.png",
+    url: "https://bit.ly/DAELITES_WAITLIST",
   },
   {
+    id: 2,
     title: "SOFT SKILL FORUM",
     description:
       "This is a community forum that takes place every 3rd Saturday of the Month.",
+    src: "/images/services/b.png",
+    url: "https://bit.ly/DAELITES_WAITLIST",
   },
   {
+    id: 3,
     title: "BUILD DATA PROJECT PROGRAM",
-    description:
-      "The goal of the program is to foster collaboration among data analysts by building data projects that will sharpen and strengthen their data analytics skills.",
+    description: `The goal of the program is to foster
+       collaboration among data analysts by building data projects that will sharpen and strengthen their data analytics skills.`,
+    src: "/images/services/c.png",
+    url: "https://bit.ly/DAELITES_WAITLIST",
   },
   {
+    id: 4,
     title: "1 MILLION SMES PROJECT",
     description:
       "The long-term goal of this project is to help 1 million SMEs and NGO Organisations in Africa harness the power of data analytics to improve operational efficiency and boost profitability.",
+    src: "/images/services/d.png",
+    url: "https://bit.ly/DAELITES_WAITLIST",
   },
 ];
 
 export const courses = [
   {
     id: 1,
-    title: "The Excel Academy",
-    description: "For Beginners in Data Analytics",
-    duration: "4 weeks",
+    title: "Excel",
+    sub_title: "For Beginners in Data Analytics",
+    description:
+      "In this course, you will master Excel for advanced data analysis and visualisation. Expect to delve into complex functions, pivot tables, and data modelling techniques. By the end, you’ll be able to transform raw data into insightful reports and make data-driven decisions with confidence.",
+    offers: [
+      "4 weeks intensive training",
+      "Expert Guidance",
+      "2 interactive dashboard projects",
+      "Certification",
+    ],
     fee: "₦50,000",
     paymentLink: "https://paystack.com/pay/TheExcelAcademy",
-    extras:
-      "Student project work will be published on LinkedIn for review from experts in the data analytics field.",
+    src: "/images/courses/excel.png",
+    logo: "/images/courses/logos/excel.png",
   },
   {
     id: 2,
-    title: "The Power BI Academy",
-    description: "For Intermediate Data Analysts",
+    title: "Power BI",
+    sub_title: "For Intermediate Data Analysts",
+    description:
+      "This course will guide you through the powerful features of Power BI. Learn to create interactive dashboards and detailed reports using data modeling, DAX functions, and visual analytics. By the end, you’ll be able to convert complex datasets into compelling visual stories that drive business intelligence.",
     duration: "6 weeks",
+    offers: [
+      "6 weeks intensive training",
+      "Tips to acing Microsoft PL300 certification exam",
+      "Access to build data community",
+      "Hands-On Practical",
+      "Certification",
+    ],
     fee: "₦50,000",
     paymentLink: "https://paystack.com/pay/thepowerbiacademy",
-    extras: "Huge discount on the Microsoft Power BI Certification Exams fee.",
+    src: "/images/courses/power-BI.png",
+    logo: "/images/courses/logos/power-BI.png",
   },
   {
     id: 3,
-    title: "The Tableau Academy",
-    description: "For Intermediate Data Analysts",
+    title: " Tableau",
+    sub_title: "For Intermediates Data Analytics",
+    description:
+      "Become proficient in Tableau with this course designed to teach you the art of data visualization. Learn to create dynamic dashboards, apply best practices in data visualization, and communicate data insights effectively. By the end, you’ll be able to build and share impactful visualizations that tell a compelling data story.",
     duration: "6 weeks",
+    offers: [
+      "8 weeks intensive training",
+      "Expert Guidance",
+      "Portfolio Building",
+      "Certification",
+    ],
     fee: "₦50,000",
     paymentLink: "https://paystack.com/pay/Tableau_Academy",
-    extras:
-      "Tips to make your project emerge as Data Viz of the day in the Tableau Global Community and get recognised as a rising star in using Tableau for data analysis.",
+    src: "/images/courses/tableau.png",
+    logo: "/images/courses/logos/tableau.png",
   },
   {
     id: 4,
-    title: "The SQL Academy",
-    description: "For Intermediate Data Analysts",
+    title: " SQL ",
+    sub_title: "For Intermediate Data Analysts",
+    description:
+      "This course covers the essentials of SQL for querying and managing databases. Expect to learn how to manipulate data efficiently, create complex queries, and manage relational database systems. By the end, you’ll have the skills to support data-driven decision-making processes in any organisation.",
     duration: "6 weeks",
+    offers: [
+      "6 weeks intensive training",
+      "FREE Global Hacker rank SQL Certification Exam",
+      "Access to build data community",
+      "Hand-On Practicals",
+    ],
     fee: "₦50,000",
     paymentLink: "https://paystack.com/pay/the_sql_academy",
-    extras: "Global Hacker rank SQL Certification Exam for FREE.",
+    src: "/images/courses/sql.png",
+    logo: "/images/courses/logos/sql.png",
   },
   {
     id: 5,
-    title: "The Python Academy",
-    description: "For Advanced Data Analysts",
+    title: " Python ",
+    sub_title: "For Intermediates Data Analytics",
+    description:
+      "Become proficient in Tableau with this course designed to teach you the art of data visualization. Learn to create dynamic dashboards, apply best practices in data visualization, and communicate data insights effectively. By the end, you’ll be able to build and share impactful visualizations that tell a compelling data story.",
     duration: "6 weeks",
+    offers: [
+      "6 weeks intensive training",
+      "FREE Global Hacker rank SQL Certification Exam",
+      "Access to build data community",
+      "Hand-On Practicals",
+    ],
     fee: "₦50,000",
     paymentLink: "https://paystack.com/pay/thepythonacademy",
-    extras: "Global Hacker rank Python Certification Exam for FREE.",
+    src: "/images/courses/python.png",
+    logo: "/images/courses/logos/python.png",
   },
   {
     id: 6,
-    title: "Private Coaching - One on One Training",
-    description: "Courses: Excel, Power BI, SQL",
+    title: "Private Coaching - ",
+    sub_title: " One on One Training",
+    description:
+      "This is a personalized guidance, targeted skill development, and tailored feedback to accelerate your learning and achieve your specific goals. Available for Excel, Power BI and SQL",
+    offers: ["5 months intensive training", "Hand-On Practicals"],
     duration: "5 Months",
-    fee: "₦100,000 per month",
+    fee: "₦100,000/m",
     paymentLink: "https://paystack.com/pay/dae_private_coaching",
+    src: "/images/courses/private.png",
+    logo: "/images/courses/logos/private.png",
   },
 ];
 

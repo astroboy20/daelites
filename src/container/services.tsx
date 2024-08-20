@@ -1,74 +1,52 @@
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import React from "react";
-import { FaEnvelope } from "react-icons/fa";
-import { services, courses } from "../utils/data";
+import Image from "next/image";
+import { services } from "@/utils/data";
+import { MdOutlineArrowOutward } from "react-icons/md";
 
 const Services = () => {
   return (
-    <div className="bg-gray-100 mt-[92px] py-10 px-6 sm:px-10 lg:px-20">
-      <h1 className="text-3xl lg:text-4xl font-bold text-center mb-8 text-green-700">
-        Our Service Offerings
-      </h1>
+    <main className="mt-[92px]">
+      <div className="bg-[url('/images/service-bg.png')] h-[300px] lg:h-[450px] w-full bg-cover bg-center"></div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-        {services.map((service, index) => (
-          <div key={index} className="bg-white p-6 rounded-lg shadow-lg">
-            <h2 className="text-xl font-semibold text-gray-700">
-              {service.title}
-            </h2>
-            <p className="text-gray-600 mt-4">{service.description}</p>
-          </div>
-        ))}
-      </div>
+      <div className="bg-gray-100  py-10 px-6 sm:px-10 lg:px-20">
+        <h1 className="text-[#107C41] text-[24px] lg:text-[36px] font-bold text-center relative after:content-[''] after:w-[56px] lg:after:w-[85px] after:bg-[#8CC63F] after:mt-2 after:rounded-md after:absolute after:h-[5px] after:left-0 after:right-0 after:top-[calc(100%+8px)] after:m-auto">
+          Service Offers
+        </h1>
 
-      <div className="mt-10">
-        <h2 className="text-2xl lg:text-3xl font-bold text-center text-green-700 mb-8">
-          Data Analytics Training Programs
-        </h2>
-        <div className="grid gap-8 lg:grid-cols-2">
-          {courses.map((course) => (
-            <div key={course.id} className="p-6 bg-white shadow-lg rounded-lg">
-              <h3 className="text-xl font-semibold mb-3">{course.title}</h3>
-              <p className="text-gray-700 mb-2">{course.description}</p>
-              <p className="text-gray-700 mb-2">
-                <strong>Duration:</strong> {course.duration}
-              </p>
-              <p className="text-gray-700 mb-2">
-                <strong>Fee:</strong> {course.fee}
-              </p>
-              <p className="text-gray-700 mb-4">{course.extras}</p>
-              <Link
-                href={course.paymentLink}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-block "
-              >
-                <Button className=" m-auto lg:text-[#fff] bg-[#8CC63F] rounded-[50px] py-[15px] px-[30px] text-[12px] lg:text-[16px] font-[600] w-fit  hover:bg-transparent border-2 border-[#8CC63F] hover:text-[#8CC63F]">
-                  Enroll now
-                </Button>
-              </Link>
+        <div className="grid grid-cols-1 gap-10 mt-10">
+          {services.map((service) => (
+            <div
+              key={service.id}
+              className="grid grid-cols-1 md:grid-cols-2 gap-6 items-center"
+            >
+              <Image
+                src={service.src}
+                width={460}
+                height={350}
+                alt={service.title}
+                className={`w-full h-auto ${
+                  service.id % 2 === 0 ? "md:order-last" : ""
+                }`}
+              />
+              <div>
+                <h2 className="text-xl font-semibold text-gray-700">
+                  {service.title}
+                </h2>
+                <p className="text-gray-600 mt-4">{service.description}</p>
+                <Link
+                  href={service.url}
+                  className="text-[#8CC63F] font-[600] text-[20px] mt-5 flex items-center"
+                >
+                  Learn more <MdOutlineArrowOutward />
+                </Link>
+              </div>
             </div>
           ))}
         </div>
       </div>
-
-      <div className="mt-10 text-center">
-        <h2 className="text-2xl lg:text-3xl font-bold text-green-700 mb-4">
-          Have Questions?
-        </h2>
-        <p className="text-lg mb-4">
-          If you have any inquiries or need more information, feel free to
-          contact us.
-        </p>
-        <Link target="_blank" href={"https://bit.ly/DAELITES_WAITLIST"}>
-          <Button className=" m-auto lg:text-[#fff] bg-[#8CC63F] rounded-[50px] py-[15px] px-[30px] text-[12px] lg:text-[16px] font-[600] w-fit  hover:bg-transparent border-2 border-[#8CC63F] hover:text-[#8CC63F]">
-            <FaEnvelope className="mr-2" />
-            Contact Us
-          </Button>
-        </Link>
-      </div>
-    </div>
+    </main>
   );
 };
 

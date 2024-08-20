@@ -36,9 +36,9 @@ const Header = () => {
         <Image src={"/images/logo.png"} width={170} height={55} alt="logo" />
       </Link>
       <div className="hidden lg:flex justify-between gap-[40px] cursor-pointer text-[16px] font-[500] text-[#2F2F2F]">
-        <p className={pathname === "/" ? "border-b-2 border-[#8CC63F]" : ""}>
+        <Link href={"/"} className={pathname === "/" ? "border-b-2 border-[#8CC63F]" : ""}>
           Home
-        </p>
+        </Link>
 
         <Link
           href={"courses"}
@@ -50,9 +50,9 @@ const Header = () => {
         </Link>
 
         <Link
-          href={"/courses"}
+          href={"/services"}
           className={
-            pathname === "/courses" ? "border-b-2 border-[#8CC63F]" : ""
+            pathname === "/services" ? "border-b-2 border-[#8CC63F]" : ""
           }
         >
           Service Offering
