@@ -36,7 +36,10 @@ const Header = () => {
         <Image src={"/images/logo.png"} width={170} height={55} alt="logo" />
       </Link>
       <div className="hidden lg:flex justify-between gap-[40px] cursor-pointer text-[16px] font-[500] text-[#2F2F2F]">
-        <Link href={"/"} className={pathname === "/" ? "border-b-2 border-[#8CC63F]" : ""}>
+        <Link
+          href={"/"}
+          className={pathname === "/" ? "border-b-2 border-[#8CC63F]" : ""}
+        >
           Home
         </Link>
 
@@ -89,31 +92,37 @@ const Header = () => {
         <div className="lg:hidden absolute top-full left-0 w-full bg-white shadow-md">
           <div className="flex flex-col items-center gap-4 py-4">
             <Link
-              href="/"
+              href={"/"}
               className={pathname === "/" ? "border-b-2 border-[#8CC63F]" : ""}
             >
               Home
             </Link>
-            {pathname === "/courses" ? (
-              ""
-            ) : (
-              <p
-                className={
-                  pathname === "/about" ? "border-b-2 border-[#8CC63F]" : ""
-                }
-              >
-                About Us
-              </p>
-            )}
 
-            <p
+            <Link
+              href={"courses"}
               className={
                 pathname === "/courses" ? "border-b-2 border-[#8CC63F]" : ""
               }
-              onClick={() => handleScroll("serviceOffering")}
+            >
+              Courses
+            </Link>
+
+            <Link
+              href={"/services"}
+              className={
+                pathname === "/services" ? "border-b-2 border-[#8CC63F]" : ""
+              }
             >
               Service Offering
-            </p>
+            </Link>
+            <Link
+              href={"/blog"}
+              className={
+                pathname === "/blog" ? "border-b-2 border-[#8CC63F]" : ""
+              }
+            >
+              Blog
+            </Link>
           </div>
         </div>
       )}
