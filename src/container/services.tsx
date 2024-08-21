@@ -11,7 +11,7 @@ const Services = () => {
       <div className="bg-[url('/images/service-bg.png')] h-[300px] lg:h-[450px] w-full bg-cover bg-center"></div>
 
       <div className="bg-gray-100  py-10 px-6 sm:px-10 lg:px-20">
-        <h1 className="text-[#107C41] text-[24px] lg:text-[36px] font-bold text-center relative after:content-[''] after:w-[56px] lg:after:w-[85px] after:bg-[#8CC63F] after:mt-2 after:rounded-md after:absolute after:h-[5px] after:left-0 after:right-0 after:top-[calc(100%+8px)] after:m-auto">
+        <h1 className="text-[#107C41] text-[24px] lg:text-[36px] font-bold text-center relative after:content-[''] after:w-[56px] lg:after:w-[85px] after:bg-[#8CC63F] after:mt-2 after:rounded-md after:absolute after:h-[5px] after:left-0 after:right-0 after:top-[calc(100%+8px)] after:m-auto ">
           Service Offers
         </h1>
 
