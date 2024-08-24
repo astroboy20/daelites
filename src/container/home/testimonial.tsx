@@ -26,13 +26,7 @@ const Testimonial = () => {
             Testimonials
           </h1>
         </div>
-        <span className="absolute left-[75%] lg:left-[82%] top-[15%] sm:top-[28%] sm:left-[85%] lg:top-[26%] ">
-          <FaQuoteRight
-            size={"130px"}
-            className="w-[65px] sm:w-[75px]"
-            color="#8CC63F"
-          />
-        </span>
+        
         <div className=" bg-[#107C41] p-[10%] lg:py-[5%] lg:px-[15%] rounded-[10px] h-fit lg:h-fit">
           <Swiper
             spaceBetween={5}

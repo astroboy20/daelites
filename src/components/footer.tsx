@@ -13,15 +13,15 @@ const Footer = () => {
           <h3 className="text-[24px] text-[#8CC63F] font-[700] mb-5 lg:mb-0">
             About DAELITES
           </h3>
-          <p className="text-[14px] font-[400] leading-[35px]">
+          <p className="text-[14px] font-[400] leading-[35px] text-justify lg:text-left">
             We are the largest community empowering Africans with data analytics
-            <br />
+            <br className="hidden lg:flex" />
             tools and technology, and we have a wide spread of community members
-            <br />
+            <br className="hidden lg:flex" />
             in Nigeria, Kenya, South Africa, Ghana, Senegal, Egypt, Liberia,
-            <br />
+            <br className="hidden lg:flex" />
             Ivory coast, Angola, Togo, UK, USA, Malysia, Netherlands, Germany
-            <br />
+            <br className="hidden lg:flex" />
             and Canada.
           </p>
         </div>

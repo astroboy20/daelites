@@ -7,8 +7,8 @@ const Help = () => {
   return (
     <main className="bg-[#F4FFE5] flex flex-col-reverse gap-10 lg:flex-row lg:justify-between items-center px-[6%] pb-[8%] pt-[8%] lg:px-[10%] lg:pt-[6%] lg:pb-[0]  relative">
       <div className="flex flex-col gap-5 z-10 text-center lg:text-left">
-        <h1 className="text-[32px] text-[#0B9444] lg:text-[50px] leading-[60px] font-[700]">
-          Need More <br className="lg:block hidden" />
+        <h1 className="text-[32px] text-[#0B9444] lg:text-[50px] leading:[40px] lg:leading-[63px] font-[700]">
+          Need More <br className="hidden lg:flex " />
           Information?
         </h1>
         <p className="text-[18px] font-[400]">
@@ -24,6 +24,7 @@ const Help = () => {
           </Link>
         </div>
       </div>
+
       <div className="relative">
         <div className="absolute left-[50%] transform -translate-x-1/2 bg-[#8CC63F] w-[250px] h-[250px] lg:w-[500px] lg:h-[500px] z-0 rounded-full"></div>
         <Image
@@ -34,6 +35,7 @@ const Help = () => {
           className="relative z-10"
         />
       </div>
+
     </main>
   );
 };

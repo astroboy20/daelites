@@ -21,16 +21,17 @@ const Courses = () => {
             key={data.id}
             className="text-center flex flex-col items-center gap-5  cursor-pointer"
           >
+            <Image
+              src={data.src}
+              width={100}
+              height={100}
+              alt="course logo"
+              objectFit="cover"
+              // className="w-auto h-auto"
+            />
             <p className="text-[18px] lg:text-[24px] font-[600]">
               {data.title}
             </p>
-            <Image
-              src={data.src}
-              width={80}
-              height={80}
-              alt="course logo"
-              objectFit="cover"
-            />
           </div>
         ))}
       </div>

@@ -10,12 +10,12 @@ const Courses = () => {
   return (
     <main className="mt-[92px]">
       <div className="bg-[url('/images/course-bg.png')] h-[300px] lg:h-[450px] w-full bg-cover bg-center"></div>
-      <div className="bg-gray-100  py-10 px-6 sm:px-10 lg:px-20">
+      <div className="bg-gray-100  py-20 px-6 sm:px-10 lg:px-20">
         <h1 className=" text-[#107C41] relative text-[24px] lg:text-[36px] font-[700] text-center after:content-[''] after:w-[56px] lg:after:w-[85px] after:bg-[#8CC63F] after:m-auto after:mt-2 after:rounded-md after:absolute after:h-[5px] after:left-0 after:right-0 after:top-2/3 after:translate-y-2">
           Explore Courses
         </h1>
 
-        <div className="my-10 lg:mx-[10%]">
+        <div className="my-20 lg:mx-[10%]">
           <div className="grid gap-14 lg:grid-cols-2">
             {courses.map((course) => (
               <div key={course.id} className=" bg-white shadow-lg rounded-lg">
