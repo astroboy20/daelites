@@ -10,12 +10,12 @@ const Courses = () => {
   return (
     <main className="mt-[92px]">
       <div className="bg-[url('/images/course-bg.png')] h-[300px] lg:h-[450px] w-full bg-cover bg-center"></div>
-      <div className="bg-gray-100  py-20 px-6 sm:px-10 lg:px-20">
+      <div className="bg-gray-100 py-10 lg:py-20 px-6 sm:px-10 lg:px-20">
         <h1 className=" text-[#107C41] relative text-[24px] lg:text-[36px] font-[700] text-center after:content-[''] after:w-[56px] lg:after:w-[85px] after:bg-[#8CC63F] after:m-auto after:mt-2 after:rounded-md after:absolute after:h-[5px] after:left-0 after:right-0 after:top-2/3 after:translate-y-2">
           Explore Courses
         </h1>
 
-        <div className="my-20 lg:mx-[10%]">
+        <div className="my-10 lg:my-20 lg:mx-[10%]">
           <div className="grid gap-14 lg:grid-cols-2">
             {courses.map((course) => (
               <div key={course.id} className=" bg-white shadow-lg rounded-lg">
@@ -33,25 +33,29 @@ const Courses = () => {
                   <div className="flex items-center gap-5">
                     <Image
                       src={course.logo}
-                      width={20}
-                      height={20}
+                      width={40}
+                      height={40}
                       alt={`${course.title}`}
                       objectFit="contain"
                     />
-                    <h3 className="text-xl font-semibold">{course.title}</h3>
+                    <h3 className="text-[24px] lg:text-[32px] font-[700] text-[#107C41]">
+                      {course.title}
+                    </h3>
                   </div>
-                  <h3 className="text-xl font-semibold">{course.sub_title}</h3>
-                  <p className="text-gray-700 mb-2">{course.description}</p>
+                  <h3 className="text-[20px] lg:text-[24px] font-[600]">{course.sub_title}</h3>
+                  <p className="text-black text-[16px] mb-2">
+                    {course.description}
+                  </p>
                   <div>
                     {course.offers.map((data) => (
-                      <p className="text-gray-700 mb-5 flex gap-2 items-center">
+                      <p className="text-[16px] mb-5 flex gap-2 items-center">
                         <MarkIcon /> {data}
                       </p>
                     ))}
                   </div>
 
                   <div className="flex justify-between items-center">
-                    <p className="text-[30px] font-[700] text-[#107C41]">
+                    <p className="text-[20px] lg:text-[30px] font-[700] text-[#107C41]">
                       {course.fee}
                     </p>
                     <Link

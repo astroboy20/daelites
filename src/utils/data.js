@@ -270,7 +270,7 @@ export const courses = [
   },
   {
     id: 6,
-    title: "Private Coaching - ",
+    title: "Private Coaching",
     sub_title: " One on One Training",
     description:
       "This is a personalized guidance, targeted skill development, and tailored feedback to accelerate your learning and achieve your specific goals. Available for Excel, Power BI and SQL",
