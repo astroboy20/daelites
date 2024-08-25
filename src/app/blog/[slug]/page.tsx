@@ -4,6 +4,7 @@ import { Header } from "@/components/header";
 import { FullBlog } from "@/container/blog/full-blog";
 import { fullBlogType } from "@/utils/interface";
 
+export const revalidate = 30 // revalidate every 30 seconds
 interface Params {
   slug: string;
 }

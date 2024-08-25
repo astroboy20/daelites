@@ -4,8 +4,7 @@ import { client } from "../lib/sanity";
 import { Blog } from "@/container/blog/blog";
 import { dataType } from "@/utils/interface";
 
-
-
+export const revalidate = 30; // revalidate every 30 seconds
 
 async function getData() {
   const query = `
@@ -22,8 +21,8 @@ async function getData() {
 }
 
 export default async function page() {
-  const data:dataType[] = await getData();
-  console.log(data)
+  const data: dataType[] = await getData();
+  console.log(data);
   return (
     <main>
       <Header />
