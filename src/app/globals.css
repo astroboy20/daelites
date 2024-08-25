@@ -73,6 +73,7 @@
 
     font-family: "Space Grotesk";
   }
+
   .lenis.lenis-smooth {
     scroll-behavior: auto !important;
   }
@@ -101,6 +102,10 @@
   
   a:hover .react-icon {
     display: block;
+  }
+
+  ol,ul{
+    list-style: revert;
   }
   
 }
