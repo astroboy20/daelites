@@ -2,13 +2,10 @@ import { Header } from "../../components/header";
 import { Footer } from "../../components/footer";
 import { client } from "../lib/sanity";
 import { Blog } from "@/container/blog/blog";
+import { dataType } from "@/utils/interface";
 
 
-export interface dataType  {
-  title: string;
-  smallDescription: string;
-  image: any;
-};
+
 
 async function getData() {
   const query = `

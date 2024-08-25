@@ -1,7 +1,8 @@
-import { dataType } from "@/app/blog/page";
 import { urlFor } from "@/app/lib/sanity";
+import { dataType } from "@/utils/interface";
 import Image from "next/image";
 import Link from "next/link";
+import { IoIosArrowRoundForward } from "react-icons/io";
 
 type dataProps = {
   data: dataType[];
@@ -17,18 +18,28 @@ const Blog = ({ data }: dataProps) => {
 
         <div className="my-10 lg:my-20 lg:mx-[10%]">
           <div className="grid gap-14 lg:grid-cols-3">
-            {data.map((post,idx) => (
+            {data.map((post, idx) => (
               <div key={idx} className="flex flex-col gap-3">
-                  <Image
+                <Image
                   src={urlFor(post.image).url()}
                   width={500}
                   height={500}
                   alt={`alt `}
                   className="rounded-[10px]"
                 />
-                <h1 className="text-[24px] font-[700]">{post.title}</h1>
-                <p className="truncate text-[18px]">{post.smallDescription}</p>
-                <Link href={"/"} className="text-[#8CC63F]">Continue Reading...</Link>
+                <h1 className="line-clamp-2 text-[24px] font-[700]">
+                  {post.title}
+                </h1>
+                <p className="line-clamp-3 text-[18px]">
+                  {post.smallDescription}
+                </p>
+                <Link
+                  href={`blog/${post.currentSlug}`}
+                  className="text-[#8CC63F] flex gap-2 items-center"
+                >
+                  {" "}
+                  <IoIosArrowRoundForward /> Continue reading...
+                </Link>
               </div>
             ))}
           </div>
