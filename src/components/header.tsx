@@ -62,7 +62,7 @@ const Header = () => {
         </Link>
         <Link
           href={"/blog"}
-          className={pathname === "/blog" ? "border-b-2 border-[#8CC63F]" : ""}
+          className={pathname.startsWith("/blog") ? "border-b-2 border-[#8CC63F]" : ""}
         >
           Blog
         </Link>
@@ -118,7 +118,7 @@ const Header = () => {
             <Link
               href={"/blog"}
               className={
-                pathname === "/blog" ? "border-b-2 border-[#8CC63F]" : ""
+                pathname.startsWith("/blog") ? "border-b-2 border-[#8CC63F]" : ""
               }
             >
               Blog

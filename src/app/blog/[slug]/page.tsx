@@ -9,20 +9,20 @@ interface Params {
 }
 
 async function getData({ slug }: Params) {
-  const query = `*[_type == "blog" && slug.current == "unlocking-the-power-of-data-science"]{
-    "currentSlug":slug.current,
-      title,
-      content,
-      "image":titleImage.asset._ref
-  }[0]
-      `;
-
-  const data = await client.fetch(query);
-  return data;
-}
+    const query = `*[_type == "blog" && slug.current == "${slug}"]{
+      "currentSlug":slug.current,
+        title,
+        content,
+        "image":titleImage.asset._ref
+    }[0]`;
+  
+    const data = await client.fetch(query);
+    return data;
+  }
+  
 export default async function Page({ params }: { params: Params }) {
   const data: fullBlogType = await getData(params);
-  console.log("object", data);
+  console.log("object", params);
   return (
     <main>
       <Header />
