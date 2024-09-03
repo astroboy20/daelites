@@ -5,9 +5,9 @@ import {schemaTypes} from './schemaTypes'
 
 export default defineConfig({
   name: 'default',
-  title: 'daelite_blog',
+  title: 'DAELITES',
 
-  projectId: 'lrukasn3',
+  projectId: '9ex5x1m7',
   dataset: 'production',
 
   plugins: [structureTool(), visionTool()],
