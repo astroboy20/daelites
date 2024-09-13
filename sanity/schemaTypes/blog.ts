@@ -11,8 +11,8 @@ export default {
             name: "slug",
             title: "slug of the document",
             type: "slug",
-            options:{
-                source:"title"
+            options: {
+                source: "title"
             }
         }, {
             name: "titleImage",
@@ -29,6 +29,8 @@ export default {
             of: [
                 {
                     type: "block"
+                },{
+                    type:"image"
                 }
             ]
         }
