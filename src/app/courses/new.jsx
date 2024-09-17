@@ -88,8 +88,8 @@ const Services = () => {
       <h1 className="text-3xl lg:text-4xl font-bold text-center mb-8 text-green-700">Our Service Offerings</h1>
 
      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          {services.map((service, index) => (
-            <div key={index} className="bg-white p-6 rounded-lg shadow-lg">
+          {services.map((service) => (
+            <div key={service.title} className="bg-white p-6 rounded-lg shadow-lg">
               <h2 className="text-xl font-semibold text-gray-700">
                 {service.title}
               </h2>

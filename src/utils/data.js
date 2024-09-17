@@ -289,7 +289,6 @@ export const teamData = [
     src: "/images/team/a.png",
     name: "Iremide Olatunji",
     position: "Founder/CEO",
-
     url: "https://www.linkedin.com/in/iremide-olatunji/",
   },
   {
@@ -306,7 +305,7 @@ export const teamData = [
     name: "   Ejiroghene Pepper",
     position: "Project Coordinator,",
     type: "Soft Skills",
-    url: "https://www.linkedin.com/in/francisca-ezeabikwa",
+    url: "https://www.linkedin.com/in/ejiroghene-pepper",
   },
 
   {

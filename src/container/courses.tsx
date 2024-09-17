@@ -48,7 +48,7 @@ const Courses = () => {
                   </p>
                   <div>
                     {course.offers.map((data) => (
-                      <p className="text-[16px] mb-5 flex gap-2 items-center">
+                      <p className="text-[16px] mb-5 flex gap-2 items-center" key={data}>
                         <MarkIcon /> {data}
                       </p>
                     ))}

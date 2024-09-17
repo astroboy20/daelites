@@ -18,8 +18,8 @@ const Blog = ({ data }: dataProps) => {
 
         <div className="my-10 lg:my-20 lg:mx-[10%]">
           <div className="grid gap-14 lg:grid-cols-3">
-            {data.map((post, idx) => (
-              <div key={idx} className="flex flex-col gap-3">
+            {data.map((post) => (
+              <div key={post.title} className="flex flex-col gap-3">
                 <Image
                   src={urlFor(post.image)?.url()}
                   width={500}
