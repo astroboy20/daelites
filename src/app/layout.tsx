@@ -5,6 +5,7 @@ import "swiper/css/pagination";
 
 import { Space_Grotesk } from "next/font/google";
 import LenisScroll from "@/components/lenis-scroll";
+import GoogleAnalytics from "@/components/google-analytics";
 
 const spaceGrotesk = Space_Grotesk({
   subsets: ["latin"],
@@ -34,6 +35,7 @@ export default function RootLayout({
         <title>{metadata.title}</title>
       </Head>
       <body>
+        <GoogleAnalytics/>
         <LenisScroll />
         {children}
       </body>
